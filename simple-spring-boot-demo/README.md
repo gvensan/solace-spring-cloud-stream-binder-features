@@ -47,15 +47,15 @@ This will start the Spring Boot application.
 
 Subscribe to topic `caseconversion/topic` either programmatically or using the Subscriber tool in the `Try Me!` utility of the Solace Broker console.
 
-![subscriber](images/tryme-subscriber-1.jpg)
+<p align="center"><img width="450" alt="auth" src="images/tryme-subscriber-1.jpg"></p>
 
 Publish a message on the topic `composeFunctionQueue` either programmatically or using the Publisher tool in the `Try Me!` utility of the Solace Broker console.
 
-![publisher](images/tryme-publisher.jpg)
+<p align="center"><img width="450" alt="auth" src="images/tryme-publisher.jpg"></p>
 
 Now, you can see the received message on the topic that contains processed string.
 
-![subscriber](images/tryme-subscriber-2.jpg)
+<p align="center"><img width="450" alt="auth" src="images/tryme-subscriber-2.jpg"></p>
 
 
 In the terminal, you can see debug messages indicating the invocation of bean functions in sequence.
@@ -71,4 +71,4 @@ lowercase input: !DLROW OLLEH
 lowercase output: !dlrow olleh
 ```
 
-🔥 Hope that helps you get started with Spring Cloud Stream binder for Solace PubSub+ 🔥! 
+🔥 Hope this helps you get started with Spring Cloud Stream binder for Solace PubSub+ 🔥
