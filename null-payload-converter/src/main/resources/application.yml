@@ -1,0 +1,34 @@
+spring:
+  cloud:
+    function:
+      definition: sink
+    stream:
+      bindings:
+        sink-in-0:       
+          destination: null_payload_test
+          group: nonexclusive
+      binders:
+        local-solace:
+          type: solace
+          environment:
+            solace:
+              java:
+                host: tcp://localhost:55554
+                msgVpn: default
+                clientUsername: default
+                clientPassword: default
+      solace:
+        bindings:
+          sink-in-0:
+            consumer:
+              queueAdditionalSubscriptions: sensor/temperature/>
+              queueMaxMsgRedelivery: 3
+                
+logging:
+  level:
+    root: INFO
+    com.solacesystems.jcsmp: INFO
+    org.springframework: INFO
+    
+server:
+  port: 8095
