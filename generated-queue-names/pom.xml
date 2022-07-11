@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>generated-queue-names</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>simple-spring-boot-demo</name>
-	<description>Demo project for Spring Boot with SCSt Binder for Solace PubSub+</description>
+	<name>custom-queue-names</name>
+	<description>Generated Queue Names - Demo</description>
 	<properties>
 		<solace-spring-boot.version>1.2.1</solace-spring-boot.version>
 	</properties>
@@ -27,7 +27,6 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -37,11 +36,6 @@
 		  <groupId>com.solace.spring.cloud</groupId>
 		  <artifactId>spring-cloud-starter-stream-solace</artifactId>
 		  <version>3.3.1</version>
-		</dependency>		
-		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-text</artifactId>
-		    <version>1.9</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>

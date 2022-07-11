@@ -1,4 +1,4 @@
-# Simple Spring Boot Demo
+# Simple Spring Boot application connecting to Solace PubSub+ Broker using Spring Cloud Stream binder for Solace PubSub+ 
 
 In this Spring Cloud Stream sample, we will show how multiple functions can be defined in a single application and establish binding to destinations with Solace PubSub+ Broker as the underlying messaging system.
 
