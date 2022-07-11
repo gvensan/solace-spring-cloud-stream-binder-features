@@ -1,0 +1,30 @@
+
+spring:
+  cloud:
+    function:
+      definition: uppercase|reverse|lowercase
+    stream:
+      bindings:
+        uppercasereverselowercase-in-0:
+          destination: composeFunctionQueue
+          group: myconsumergroup
+          binder: solace-broker
+        uppercasereverselowercase-out-0:
+          destination: caseconversion/topic
+          binder: solace-broker
+      binders:
+        solace-broker:
+          type: solace
+          environment:
+            solace: # (1)
+              java:
+                host: tcp://localhost:55554
+                msgVpn: default
+                clientUsername: default
+                clientPassword: default
+                connectRetries: -1
+                reconnectRetries: -1
+#                apiProperties:
+#                  ssl_trust_store: <path_to_trust_store>
+#                  ssl_trust_store_password: <trust_store_password>
+#                  ssl_validate_certificate: true
