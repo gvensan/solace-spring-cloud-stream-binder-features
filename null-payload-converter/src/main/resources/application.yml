@@ -1,10 +1,10 @@
 spring:
   cloud:
     function:
-      definition: sink
+      definition: temperatureSink
     stream:
       bindings:
-        sink-in-0:       
+        temperatureSink-in-0:       
           destination: null_payload_test
           group: nonexclusive
       binders:
@@ -19,7 +19,7 @@ spring:
                 clientPassword: default
       solace:
         bindings:
-          sink-in-0:
+          temperatureSink-in-0:
             consumer:
               queueAdditionalSubscriptions: sensor/temperature/>
               queueMaxMsgRedelivery: 3

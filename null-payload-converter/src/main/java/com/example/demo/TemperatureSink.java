@@ -34,7 +34,7 @@ public class TemperatureSink {
 	}
 
 	@Bean
-	public Consumer<SensorReading> sink(){
+	public Consumer<SensorReading> temperatureSink(){
 		return System.out::println;
 	}
 	
