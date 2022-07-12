@@ -41,14 +41,14 @@ This will start the Spring Boot application.
 
 Based on the configuration, you can see the generated names for the queue and error queue.
 
-<p align="center"><img width="450" alt="auth" src="images/generated-names-1.jpg"></p>
+<p align="center"><img width="auto" alt="auth" src="images/generated-names-1.jpg"></p>
 
 Generated Queue name:
 
-<p align="center"><img width="450" alt="auth" src="images/generated-names-2.jpg"></p>
+<p align="center"><img width="640" alt="auth" src="images/generated-names-2.jpg"></p>
 
 Generated Error Queue name:
 
-<p align="center"><img width="450" alt="auth" src="images/generated-names-3.jpg"></p>
+<p align="center"><img width="640" alt="auth" src="images/generated-names-3.jpg"></p>
 
 🔥 Yes, Now you can name your queue and error queue names as you wish! 🔥

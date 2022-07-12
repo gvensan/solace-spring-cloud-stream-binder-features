@@ -47,15 +47,15 @@ This will start the Spring Boot application.
 
 Subscribe to topic `caseconversion/topic` either programmatically or using the Subscriber tool in the `Try Me!` utility of the Solace Broker console.
 
-<p align="center"><img width="450" alt="auth" src="images/tryme-subscriber-1.jpg"></p>
+<p align="center"><img width="640" alt="auth" src="images/tryme-subscriber-1.jpg"></p>
 
 Publish a message on the topic `composeFunctionQueue` either programmatically or using the Publisher tool in the `Try Me!` utility of the Solace Broker console.
 
-<p align="center"><img width="450" alt="auth" src="images/tryme-publisher.jpg"></p>
+<p align="center"><img width="640" alt="auth" src="images/tryme-publisher.jpg"></p>
 
 Now, you can see the received message on the topic that contains processed string.
 
-<p align="center"><img width="450" alt="auth" src="images/tryme-subscriber-2.jpg"></p>
+<p align="center"><img width="640" alt="auth" src="images/tryme-subscriber-2.jpg"></p>
 
 
 In the terminal, you can see debug messages indicating the invocation of bean functions in sequence.

@@ -52,7 +52,7 @@ This will start the Spring Boot application.
 ### Publishing a Message with NULL payload
 Publish a message on the topic `sensor/temperature/99` either programmatically or using the Publisher tool in the `Try Me!` utility of the Solace Broker console. Leave the *Message Content* empty.
 
-<p align="center"><img width="450" alt="auth" src="images/tryme-publisher-1.jpg"></p>
+<p align="center"><img width="640" alt="auth" src="images/tryme-publisher-1.jpg"></p>
 
 In the terminal, you can see the *SolaceHeaders.NULL_PAYLOAD* check passed and a dummy *SensorReading* object is returned.
 ```
@@ -68,7 +68,7 @@ Populate the following string as the message content:
 { "timestamp": 1657542762 , "sensorID": 101, "temperature": 98.3, "baseUnit": "FAHRENHEIT"}
 ```
 
-<p align="center"><img width="450" alt="auth" src="images/tryme-publisher-2.jpg"></p>
+<p align="center"><img width="640" alt="auth" src="images/tryme-publisher-2.jpg"></p>
 
 In the terminal, you can see the *SolaceHeaders.NULL_PAYLOAD* check passed and a dummy *SensorReading* object is returned.
 ```
