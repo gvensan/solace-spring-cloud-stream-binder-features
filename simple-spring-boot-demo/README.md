@@ -1,6 +1,6 @@
 # Simple Spring Boot application connecting to Solace PubSub+ Broker using Spring Cloud Stream binder for Solace PubSub+ 
 
-In this Spring Cloud Stream sample, we will show how multiple functions can be defined in a single application and establish binding to destinations with Solace PubSub+ Broker as the underlying messaging system.
+This Spring Cloud Stream sample will show how multiple functions can be defined in a single application and establish binding to destinations with Solace PubSub+ Broker as the underlying messaging system.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ Java 8 or Above
 
 Spring Cloud Function includes some great features to take composing functions to another level.
 
-Declarative Composition - In our code, we have defined three functions.
+Declarative Composition: In our code, we have defined three functions.
 ```
 @Bean
 public Function<Message<String>, Message<String>> uppercase() {
@@ -31,13 +31,13 @@ We can compose these functions using the spring.cloud.function.definition proper
 
 Here | is a composition operator which results in an autoconfigured bean implementing the composite function, along with related resources to let you seamlessly invoke the composite function.
 
-A message received on the `composeFunctionQueue` would be passed through each of the functions and the final result will be published to the topic `caseconversion/topic`
+A message received on the `composeFunctionQueue` will pass through each of the functions, and the final result will be published to the topic `caseconversion/topic`
 
 
 
 ## Running the application
 
-Make sure to update the Solace Broker connection details with appropriate host, msgVpn, client username and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
+Make sure to update the Solace Broker connection details with the appropriate host, msgVpn, client username, and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
 
 ```
 cd simple-spring-boot-demo
@@ -45,7 +45,7 @@ mvn clean spring-boot:run
 ```
 This will start the Spring Boot application.
 
-Subscribe to topic `caseconversion/topic` either programmatically or using the Subscriber tool in the `Try Me!` utility of the Solace Broker console.
+Subscribe to the topic `caseconversion/topic` either programmatically or using the Subscriber tool in the `Try Me!` utility of the Solace Broker console.
 
 <p align="center"><img width="640" alt="auth" src="images/tryme-subscriber-1.jpg"></p>
 
@@ -53,12 +53,12 @@ Publish a message on the topic `composeFunctionQueue` either programmatically or
 
 <p align="center"><img width="640" alt="auth" src="images/tryme-publisher.jpg"></p>
 
-Now, you can see the received message on the topic that contains processed string.
+You can now see the received message on the topic containing processed string.
 
 <p align="center"><img width="640" alt="auth" src="images/tryme-subscriber-2.jpg"></p>
 
 
-In the terminal, you can see debug messages indicating the invocation of bean functions in sequence.
+In the terminal, debug messages indicate the invocation of bean functions in sequence.
 ```
 Entering uppercase
 uppercase input: Hello world!

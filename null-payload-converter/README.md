@@ -41,7 +41,7 @@ protected Object convertFromInternal(Message<?> message, Class<?> targetClass, O
 
 ## Running the application
 
-Make sure to update the Solace Broker connection details with appropriate host, msgVpn, client username and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
+Make sure to update the Solace Broker connection details with the appropriate host, msgVpn, client username, and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
 
 ```
 cd null-payload-converter
@@ -54,13 +54,13 @@ Publish a message on the topic `sensor/temperature/99` either programmatically o
 
 <p align="center"><img width="640" alt="auth" src="images/tryme-publisher-1.jpg"></p>
 
-In the terminal, you can see the *SolaceHeaders.NULL_PAYLOAD* check passed and a dummy *SensorReading* object is returned.
+In the terminal, you can see the *SolaceHeaders.NULL_PAYLOAD* check passed, and a dummy *SensorReading* object is returned.
 ```
 Received NULL payload, returning dummy SensorReading object
 SensorReading [ 2022-07-11 21:20:57.652 null n null ]
 ```
 
-### Publishing a Message with non-NULL payload
+### Publishing a Message with a non-NULL payload
 Publish a message on the topic `sensor/temperature/99` either programmatically or using the Publisher tool in the `Try Me!` utility of the Solace Broker console. 
 
 Populate the following string as the message content:
@@ -70,7 +70,7 @@ Populate the following string as the message content:
 
 <p align="center"><img width="640" alt="auth" src="images/tryme-publisher-2.jpg"></p>
 
-In the terminal, you can see the *SolaceHeaders.NULL_PAYLOAD* check passed and a dummy *SensorReading* object is returned.
+In the terminal, you can see the *SolaceHeaders.NULL_PAYLOAD* check passed, and a dummy *SensorReading* object is returned.
 ```
 Received a non-NULL payload, returning the object
 SensorReading [ 1970-01-20 09:55:42.762 101 98.3 FAHRENHEIT ]

@@ -126,5 +126,6 @@ You can verify this by checking the `EVENTS_QUEUE-manual/ack/test` stats.
 
 <p align="center"><img width="auto" alt="auth" src="images/manualack-queues-requeue-discard.jpg"></p>
 
+**NOTE**: If you configure a DMQ for the `EVENTS_QUEUE-manual/ack/test` and publish the messages with `DMQ Eligible` turned on, messages won't be discarded after reaching max redelivery limit - rather queued in the DMQ. As an exercise, try for yourself!
 
 🔥 Yes, Now you can manage your acknowledgements manually suiting your business requirements! 🔥

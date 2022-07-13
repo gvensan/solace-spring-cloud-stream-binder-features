@@ -1,6 +1,6 @@
 # Generated Queue & Error Queue Names
 
-In this Spring Cloud Stream sample, we will show how to generate custom names for queues and error queues using Spring configuration. We will also examine the attributes from [SolaceCommonProperties](https://github.com/SolaceProducts/solace-spring-cloud/blob/master/solace-spring-cloud-stream-binder/solace-spring-cloud-stream-binder-core/src/main/java/com/solace/spring/cloud/stream/binder/properties/SolaceCommonProperties.java) and [SolaceConsumerProperties](https://github.com/SolaceProducts/solace-spring-cloud/blob/master/solace-spring-cloud-stream-binder/solace-spring-cloud-stream-binder-core/src/main/java/com/solace/spring/cloud/stream/binder/properties/SolaceConsumerProperties.java) that helps in the name generation.
+This Spring Cloud Stream sample will show how to generate custom names for queues and error queues using Spring configuration. We will also examine the attributes from [SolaceCommonProperties](https://github.com/SolaceProducts/solace-spring-cloud/blob/master/solace-spring-cloud-stream-binder/solace-spring-cloud-stream-binder-core/src/main/java/com/solace/spring/cloud/stream/binder/properties/SolaceCommonProperties.java) and [SolaceConsumerProperties](https://github.com/SolaceProducts/solace-spring-cloud/blob/master/solace-spring-cloud-stream-binder/solace-spring-cloud-stream-binder-core/src/main/java/com/solace/spring/cloud/stream/binder/properties/SolaceConsumerProperties.java) that helps in the name generation.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ destination.trim().replaceAll('[*>]', '_')
 
 ## Running the application
 
-Make sure to update the Solace Broker connection details with appropriate host, msgVpn, client username and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
+Make sure to update the Solace Broker connection details with the appropriate host, msgVpn, client username, and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
 
 ```
 cd generated-queue-names
