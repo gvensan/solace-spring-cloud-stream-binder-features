@@ -2,8 +2,6 @@ package com.example.demo;
 
 import java.util.function.Function;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -17,8 +15,6 @@ import com.solace.spring.cloud.stream.binder.util.SolaceAcknowledgmentException;
 
 @SpringBootApplication
 public class ManualAcknowledgement {
-	private static final Logger log = LoggerFactory.getLogger(ManualAcknowledgement.class);
-
 	public static void main(String[] args) {
 		SpringApplication.run(ManualAcknowledgement.class, args);
 	}
@@ -56,7 +52,7 @@ public class ManualAcknowledgement {
                     return "Rejecting the Message";
                 }
             } catch (SolaceAcknowledgmentException e) {
-            	log.warn("Warning, exception occurred but message will be re-queued on broker and re-delivered", e);
+            	System.out.println("Warning, exception occurred but message will be re-queued on broker and re-delivered" + e);
                 return null; //Don't send an output message
             } catch (InterruptedException e) {
 				e.printStackTrace();

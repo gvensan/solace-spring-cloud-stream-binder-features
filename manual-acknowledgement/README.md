@@ -54,7 +54,7 @@ if (cid.equals("accept")) {
 
 ## Running the application
 
-Make sure to update the Solace Broker connection details with appropriate host, msgVpn, client username and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
+Make sure to update the Solace Broker connection details with appropriate host, msgVpn, client username and password in `spring.cloud.stream.binders.solace-broker.environment` settings.
 
 ```
 cd manual-acknowledgement

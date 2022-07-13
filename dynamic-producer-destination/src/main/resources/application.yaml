@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    function:
+      definition: dynamicDestination
+    stream:
+      bindings:
+        dynamicDestination-in-0:
+          destination: 'default/destination'
+          group: clientAck
+        dynamicDestination-out-0:
+          destination: 'dynamic/destination'
+      binders:
+        solace-broker:
+          type: solace
+          environment:
+            solace: # (1)
+              java:
+                host: tcp://localhost:55554
+                msgVpn: default
+                clientUsername: default
+                clientPassword: default
+                connectRetries: -1
+                reconnectRetries: -1

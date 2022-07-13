@@ -48,7 +48,7 @@ Batching is a consumer side feature, and the publisher has no concern or partici
 
 ## Running the application
 
-Make sure to update the Solace Broker connection details with the appropriate host, msgVpn, client username, and password in `spring.cloud.stream.binders.solace-broker.environmet` settings.
+Make sure to update the Solace Broker connection details with the appropriate host, msgVpn, client username, and password in `spring.cloud.stream.binders.solace-broker.environment` settings.
 
 ```
 cd batch-consumers

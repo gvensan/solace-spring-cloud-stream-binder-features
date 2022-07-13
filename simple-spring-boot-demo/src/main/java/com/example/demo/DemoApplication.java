@@ -5,9 +5,6 @@ import java.util.function.Function;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.integration.StaticMessageHeaderAccessor;
-import org.springframework.integration.acks.AckUtils;
-import org.springframework.integration.acks.AcknowledgmentCallback;
 import org.springframework.integration.support.MessageBuilder;
 import org.springframework.messaging.Message;
 

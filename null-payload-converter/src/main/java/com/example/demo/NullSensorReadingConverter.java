@@ -3,8 +3,6 @@ package com.example.demo;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.converter.AbstractMessageConverter;
 
-import com.example.demo.SensorReading.BaseUnit;
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.solace.spring.cloud.stream.binder.messaging.SolaceBinderHeaders;
 
 public class NullSensorReadingConverter extends AbstractMessageConverter {
